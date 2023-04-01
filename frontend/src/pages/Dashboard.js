@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import AllLocation from "../pages/AllLocation/AllLocation";
 import { useNavigate } from "react-router-dom";
 import MainScreen from "../components/comman/MainScreen";
