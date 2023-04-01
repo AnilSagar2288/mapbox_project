@@ -1,0 +1,85 @@
+a {
+  text-decoration: none !important;
+}
+
+.navbar {
+  border: none !important;
+  box-shadow: 0 0 5px;
+}
+
+.navLogo {
+  color: white !important;
+  font-size: 25px;
+}
+
+.navlink {
+  color: white !important;
+  opacity: 0.55;
+}
+.navlink:hover {
+  opacity: 0.75;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(21, 140, 186, 1);
+  color: white;
+  padding: 8px 0;
+  z-index: 2;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.card-body-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navlink-btn,
+.navlink-btn:hover {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.navlink-btn i {
+  margin-right: 5px;
+}
+
+.card-wrapper {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
