@@ -29,7 +29,7 @@ const LoginScreen = () => {
 
   return (
     <MainScreen title="LOGIN">
-      <Form onSubmit={submitHandler}>
+      <Form onSubmit={submitHandler} className="form-lable-style">
         {error && <ErrorMessage variant="danger">{error}</ErrorMessage>}
         {loading && <Loading sendInfo="info" />}
 
@@ -43,7 +43,7 @@ const LoginScreen = () => {
           />
         </Form.Group>
         <Form.Group className="mb-3">
-          <Form.Label>Password</Form.Label>
+          <Form.Label >Password</Form.Label>
           <Form.Control
             type="password"
             placeholder="Enter Password"
@@ -57,7 +57,7 @@ const LoginScreen = () => {
       </Form>
       <Row className="mt-3">
         <Col>
-          <div>
+          <div className="form-info">
             New User ? <Link to="/register">Register</Link>
           </div>
         </Col>

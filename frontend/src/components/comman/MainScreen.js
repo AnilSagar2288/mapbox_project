@@ -5,7 +5,7 @@ import "./comman.css";
 const MainScreen = ({ title, children }) => {
   return (
     <Container className="mainback">
-      <div className="page">
+      <div className={"page"}>
         {title && (
           <>
             <h1 className="heading">{title}</h1>

@@ -34,7 +34,7 @@ const Registration = () => {
       {error && <ErrorMessage variant="danger">{error}</ErrorMessage>}
       {loading && <Loading sendInfo="danger" />}
       {message && <ErrorMessage variant="danger">{message}</ErrorMessage>}
-      <Form onSubmit={submitHandler}>
+      <Form onSubmit={submitHandler} className="form-lable-style">
         <Form.Group className="mb-3" controlId="formBasicName">
           <Form.Label>Name</Form.Label>
           <Form.Control
@@ -77,7 +77,7 @@ const Registration = () => {
       </Form>
       <Row className="mt-3">
         <Col>
-          <div>
+          <div className="form-info">
             Already have Account ? <Link to="/login">Login</Link>
           </div>
         </Col>

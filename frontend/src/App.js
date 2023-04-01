@@ -12,7 +12,7 @@ function App() {
   return (
     <Router>
       <Header />
-      <main>
+      <main className="main_container">
         <Routes>
           <Route path="/" element={<LandingPage />} exact />
           <Route path="/register" element={<Registration />} />
